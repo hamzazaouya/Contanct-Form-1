@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: sans-serif;
+    background: url(img/back.jpg) no-repeat top center / cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding; 0 20px;
+}
+
+.contact-form {
+    min-width: 550px;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 30px ;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .13)
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+    width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+    margin: 10px 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #C5ECFD;
+    padding: 10px;
+    color: #C5ECFD;
+    width: 100%;
+}
+
+.msg textarea {
+    height: 212px;
+}
+
+::-webkit-input-placeholder {
+    color: #C5ECFD
+}
+
+::-moz-input-placeholder {
+    color: #C5ECFD
+}
+
+::-ms-input-placeholder {
+    color: #C5ECFD
+}
+
+::-o-input-placeholder {
+    color: #C5ECFD
+}
+
+.btn {
+    background: #39B7DD;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-form {
+        flex-direction: column;
+    }
+    
+    .msg textarea {
+        height: 80px;
+    }
+    
+    .input-fields,
+    .msg {
+        width: 100%;
+    }
+}
